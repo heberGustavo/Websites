@@ -1,0 +1,557 @@
+/**********************
+       FONTES
+**********************/
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap'); /*NavBar*/
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap'); /*Titulo*/
+@import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap'); /*Conteudo*/
+@import url('https://fonts.googleapis.com/css2?family=Kite+One&display=swap'); /*Depoimentos*/
+/**********************
+    PALETA DE CORES
+
+    #091540 - Escuro
+    #3D518C - Médio
+    #7692FF - Claro
+**********************/
+.cor-principal{
+  color: #3D518C;
+}
+
+.fundo-principal{
+  background-color: #7692FF;
+}
+/**********************
+        GERAIS
+**********************/
+/*Depoimento = font-family: 'Kite One', sans-serif;*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Kaushan Script', cursive;
+}
+
+span,
+text,
+p,
+button{
+  font-family: 'Spinnaker', sans-serif;
+}
+
+a{
+  font-family: 'Fugaz One', cursive;
+}
+
+.espacamento-linha{
+  padding: 60px 0;
+}
+
+.padding-center{
+  padding: 20px 15%;
+}
+
+/* Active */
+.active-nav {
+  height: 95px !important;
+  padding: 0;
+  background-color: #fff !important;
+}
+
+.active-cores{
+  color: #3D518C;
+}
+
+.active-cores:hover{
+  color: #3D518C;
+}
+
+nav.stroke ul li .active-cores:after,
+  nav.fill ul li .active-cores:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #091540;
+    height: 1px;
+  }
+
+.active-logo {
+  width: 120px;
+  -webkit-transition: all 1.0s ease-in-out;
+  -moz-transition: all 1.0s ease-in-out;
+  -o-transition: all 1.0s ease-in-out;
+  -ms-transition: all 1.0s ease-in-out;
+  transition: all 1.0s ease-in-out;
+}
+
+.desative-logo {
+  -webkit-transition: all 1.0s ease-in-out;
+  -moz-transition: all 1.0s ease-in-out;
+  -o-transition: all 1.0s ease-in-out;
+  -ms-transition: all 1.0s ease-in-out;
+  transition: all 1.0s ease-in-out;
+}
+
+.logo-branca{
+  display: none !important;
+}
+
+#logo-preta{
+  display: none;
+}
+
+.logo-preta{
+  display: block !important;
+}
+/**********************
+        HEADER
+**********************/
+header{
+  background-color: lightgray; 
+}
+
+.fundo-navbar{
+  background-color: #091540;
+  height: 150px;
+}
+
+nav {
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    margin: 0 auto;
+    background: #091540;
+    padding: 10px 0;
+    z-index: 9999;
+
+    /*Animação*/
+    -webkit-transition: all 1.0s ease-in;
+    -moz-transition: all 1.0s ease-in;
+    -o-transition: all 1.0s ease-in;
+    -ms-transition: all 1.0s ease-in;
+    transition: all 1.0s ease-in; 
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: end;
+    display: inline-block;
+  }
+
+  nav .logo {
+    width: 25%;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav .menus {
+    width: 74%;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li img {
+    width: 150px;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 7px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav.stroke ul li a,
+  nav.fill ul li a {
+    position: relative;
+  }
+  nav.stroke ul li a:after,
+  nav.fill ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #fff;
+    height: 1px;
+  }
+  nav.stroke ul li a:hover:after {
+    width: 100%;
+  }
+  
+  nav.fill ul li a {
+    transition: all 2s;
+  }
+
+/*******************
+    MENU MOBILE
+*******************/
+#conteudo-menu-mobile{
+  display: none;
+}
+
+.mobile{
+  width: 74%;
+  display: none;
+}
+
+.menu-mobile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: blue; 
+    cursor: pointer;
+    box-shadow: 0 0 0 0 blue, 0 0 0 0 blue; /*Para resolver bug de linha*/
+    transition: box-shadow 1s ease-in-out;
+}
+
+.menu-mobile:hover{
+    box-shadow: 0 0 0 8px blue, 0 0 0 8px blue;
+}
+
+.hamburguer{
+    position: relative;
+    display: block;
+    background-color: white;
+    width: 20px;
+    height: 2px;
+    top: 18px;
+    left: 10px;
+    transition: .5s ease-in-out;
+}
+
+.hamburguer:before, 
+.hamburguer::after{
+    background-color: white;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .5s ease-in-out;
+}
+
+.hamburguer::before{
+    top: -6px;
+}
+
+.hamburguer::after{
+    bottom: -6px;
+}
+
+/*Rotação do menu*/
+#menu-hamburger:checked ~ label .hamburguer{
+    transform: rotate(45deg);
+}
+
+#menu-hamburger:checked ~ label .hamburguer::before{
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu-hamburger:checked ~ label .hamburguer::after{
+    bottom: 0;
+    transform: rotate(90deg);
+}
+
+#menu-hamburger:checked ~ label .menu-mobile{
+    /*vw - 100% da largura*/
+    /*vh - 100% da altura*/
+    box-shadow: 0 0 0 130vw blue, 0 0 0 130vh blue;   
+}
+
+/*Mostrar conteudo somente quando o menu for clicado*/
+#menu-hamburger:checked ~ ul{
+  opacity: 1;
+}
+/*Torna link clicavel*/
+#menu-hamburger:checked ~ ul a{
+  pointer-events: all;
+}
+
+header nav .itens-menu-mobile{
+  position: absolute; /*Fica por cima de qualquer elemento*/
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  opacity: 0; /*Mostra somente quando tiver aberto - */
+  transition: .19s .5s cubic-bezier(0.21, 1.04, 0.31, 1.09);
+}
+
+/*Torna link não clicavel*/
+header nav .itens-menu-mobile a{
+  pointer-events: none;
+}
+
+header nav .itens-menu-mobile li{
+  display: block;
+}
+
+
+/*******************
+        BIO
+*******************/
+#bio .perfil{
+  width: 200px;
+  height: 200px;
+  border: 2px solid #7692FF;
+  border-radius: 100%;
+  padding: 2px;
+}
+
+#bio .principal{
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+#bio .principal h2{
+  margin-bottom: 0;
+}
+
+#bio .principal span{
+  font-style: oblique;
+}
+
+
+/*******************
+    DEPOIMENTOS
+*******************/
+#depoimentos .foto{
+  width: 200px;
+  height: 200px;
+  border: 2px solid #7692FF;
+  border-radius: 100%;
+  padding: 2px;
+}
+
+#depoimentos h3{
+  margin-top: 20px;
+}
+
+#depoimentos p{
+  font-family: 'Kite One', sans-serif;
+}
+
+#depoimentos .item .depoimento{
+  padding: 20px 0;
+}
+
+
+/*******************
+      CARD_01
+*******************/
+#card_1 .imagem{
+  width: 100%;
+  height: 400px;
+  background: #fff url(../img/foto_05.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*******************
+       Fotos
+*******************/
+#portfolio {  
+  margin: 1rem 0;
+  -webkit-column-count: 3; 
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 1rem;
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
+  -webkit-column-width: 33.33333333333333%;
+  -moz-column-width: 33.33333333333333%;
+  column-width: 33.33333333333333%;
+}
+
+
+.tile img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 20px 0 20px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.tile img:hover{
+  opacity: 0.8;
+}
+
+
+/*******************
+      CONTATO
+*******************/
+#contato .imagem {
+  position: relative;
+  width: 120%;
+  padding-top: 80%;
+  margin: 2rem auto;
+}
+#contato .imagem > .block {
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  perspective: 1000px;
+}
+#contato .imagem > .block:nth-of-type(1) {
+  height: 80%;
+  top: 10%;
+  left: 17%;
+  width: 15%;
+}
+#contato .imagem > .block:nth-of-type(2) {
+  top: 0;
+  left: 35%;
+}
+#contato .imagem > .block:nth-of-type(3) {
+  height: 80%;
+  top: 10%;
+  left: 64%;
+  width: 15%;
+}
+#contato .imagem > .block > .side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../img/foto_01.jpg');
+  background-size: auto 100%;
+  box-shadow: -1vw 0.5vw 1vw rgba(0, 0, 0, 0.3);
+}
+#contato .imagem > .block > .side.-main {
+  height: 100%;
+  width: 100%;
+  transform: rotateY(30deg);
+  transform-origin: 0 50%;
+}
+#contato .imagem > .block > .side.-left {
+  height: 100%;
+  width: 20%;
+  transform-origin: 0 50%;
+  transform: rotateY(-60deg) translateX(-100%);
+  filter: brightness(40%);
+}
+#contato .imagem > .block:nth-of-type(1) > .side.-main {
+  background-position: 4% 50%;
+  background-size: auto 130%;
+}
+#contato .imagem > .block:nth-of-type(1) > .side.-left {
+  background-position: 0 50%;
+  background-size: auto 130%;
+}
+#contato .imagem > .block:nth-of-type(2) > .side.-main {
+  background-position: 50% 0;
+}
+#contato .imagem > .block:nth-of-type(2) > .side.-left {
+  background-position: 28.5% 0;
+}
+#contato .imagem > .block:nth-of-type(3) > .side.-main {
+  background-position: 96% 50%;
+  background-size: auto 130%;
+}
+#contato .imagemweb > .block:nth-of-type(3) > .side.-left {
+  background-position: 78% 50%;
+  background-size: auto 130%;
+}
+
+#contato span{
+  font-style: oblique;
+  font-size: 14px;
+}
+
+#contato .botao a,i{
+  color: #fff;
+}
+
+#contato .botao a:hover{
+  background-color: #536bc7;
+}
+
+/*Footer*/
+footer{
+  padding: 25px;
+}
+
+footer ul{
+  list-style: none;
+}
+
+footer ul li{
+  text-decoration: none;
+}
+
+footer h3, i , a {
+  color: #fff;
+}
+
+footer ul li a:hover{
+  text-decoration: none;
+}
+
+footer .redes-sociais li{
+  display: inline-block;
+  padding: 0 5px;
+}
+
+footer .redes-sociais a{
+  font-size: 25px;
+}
+
+footer .redes-sociais i:hover{
+  color: #007bff !important;
+}
+/*******************
+    MEDIA QUERIES
+*******************/
+@media (max-width: 576px) { 
+  
+ }
+
+@media (max-width: 768px) { 
+  .mobile {
+    display: inline-block;
+  }
+
+  #conteudo-menu-mobile{
+    display: block;
+  }  
+
+  #conteudo-menu-web{
+    display: none;
+  }
+
+ }
+
+@media (max-width: 992px) {
+  
+ }
+
+@media (max-width: 1200px) {
+  
+ }
