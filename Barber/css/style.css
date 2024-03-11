@@ -1,0 +1,325 @@
+/*** FONTES ***/
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: FugazOne;
+    src: url(../fonts/FugazOne-Regular.ttf);
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+* {
+    font-family: Lato;
+}
+
+section h5,
+section h2 {
+    font-family: FugazOne;
+}
+
+.espacamento-top{
+    margin-top: 80px;
+}
+
+.espacamento-bottom{
+    margin-bottom: 80px;
+}
+
+.p-30{
+    padding: 100px 60px;
+}
+
+/*** NAVBAR ***/
+.active-nav{
+    background: white;
+    height: 120px;
+}
+
+.active-a{
+    color: #000 !important;
+    height: 120px;
+}
+
+.fundo-nav{
+    background: #00000075;
+}
+
+#navbarScroll ul {
+    margin-left: auto;
+}
+
+#mobile{
+    border: 1px solid #fff;
+}
+
+/*** BANNER ***/
+#banner {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/banner.jpg) no-repeat center;
+    background-size: cover;
+    color: #fff;
+}
+
+#banner ul li a.nav-link,
+#banner h1,
+#banner .informacoes .info-empresa h3{
+    font-family: FugazOne;
+}
+
+p{
+    font-family: inherit;
+    text-align: center;
+}
+
+.centralizar-centro{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align:center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    margin-top: -80px;
+}
+
+#banner .info-empresa{
+    text-align: center;
+}
+
+.informacoes{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align:center;
+    color: white;
+    position: absolute;
+    top: 100%;
+    margin-top: -100px;
+}
+
+.informacoes p{
+    margin: 0;
+}
+
+.info-empresa .col-md-4{
+    align-self: center;
+}
+
+.bloco-central{
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+
+.divisor{
+    background: #000;
+    width: 10%;
+    height: 2px;
+    margin: auto;
+}
+
+
+/*** SESSAO 3 ***/
+#sessao3, #sobre{
+    background: url(../img/Papel-de-Parede-pontos-brancos-3357-01.jpg);
+}
+
+.divisor-card{
+    background: #000;
+    width: 30%;
+    height: 2px;
+}
+
+.box{
+    background: #fff;
+    margin: 49px;
+    padding: 30px;
+    border-radius: 10px 0;
+}
+
+.justify-content-space-evenly{
+    justify-content: space-evenly;
+}
+
+#sessao3 .card{
+    border-radius: 20px 5px;
+    box-shadow: 3px 5px 20px #000;
+}
+
+/*** SESSÃO 4 ***/
+#precos{
+    background: url(../img/hair-bj-1.jpg);
+    background-attachment: fixed;
+}
+
+#precos .caixa{
+    height: 230px;
+}
+
+#precos .caixa h3{
+    border: 1px solid #fff;
+    margin: 0;
+    padding: 10px;
+}
+
+#precos .caixa p{
+    border: 1px solid #fff;
+    margin: 0;
+    padding: 10px;
+}
+
+.borda-esquerda{
+    border-left: 1px solid #000;
+    padding-left: 0;
+}
+
+.borda-direita{
+    border-right: 1px solid #000;
+    padding-right: 0;
+}
+
+#sobre img{
+    border-radius: 20px 5px;
+    box-shadow: 3px 5px 20px #000;
+}
+
+/*Custom Scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ececec4d; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(201, 201, 201); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(156, 156, 156); 
+  }
+
+  /*** MEDIA QUERY ***/
+@media (max-width: 575.98px) { 
+
+    #mobile{
+        margin-right: 3%
+    }
+
+    #navbarScroll ul{
+        text-align: end !important;
+        margin-right: 10px !important;
+        padding: 10px 0;
+    }
+
+    #navbarScroll{
+        background: #000;
+    }
+
+    .row{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #banner .informacoes{
+        margin-top: 50px;
+        color: black;
+    }
+
+    #banner .informacoes h3{
+        font-size: 20px;
+    }
+
+    #banner .informacoes p{
+        margin-bottom: 20px;
+    }
+
+    .central-mobile{
+        margin-top: 25px;
+    }
+
+    .meu-containerCustom{
+        margin-top: 200px;
+    }
+
+    .meu-containerCustom h5{
+        border-top: 1px solid black;
+        padding-top: 10px;
+    }
+
+    .img-demo{
+        margin-top: 80px;
+    }
+
+    #sessao3 .coluna-item{
+        margin: 10px;
+    }
+    
+    #precos .caixa h3{
+        font-size: 20px;
+    }
+
+    #contato .logo{
+        width: 50%;
+    }
+
+    #contato .borda-direita{
+        border: none;
+        margin: 20px;
+    }
+
+    #contato .borda-esquerda{
+        border: none;
+        margin: 20px 0 0 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    #banner .info-empresa h3{
+        font-size: 26px;
+    }
+    
+    .img-demo{
+        margin-top: 80px;
+    }
+    
+    #sessao3 .coluna-item{
+        margin: 10px;
+    }
+
+    #contato .logo{
+        width: 50%;
+    }
+
+    #contato .borda-direita{
+        border: none;
+        margin: 20px;
+    }
+
+    #contato .borda-esquerda{
+        border: none;
+        margin: 20px 0 0 0;
+    }
+ }
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    #sessao3 .card{
+        width: 140%;
+    }
+
+    #sessao3 .container{
+        margin-left: 0 !important;
+    }
+}
