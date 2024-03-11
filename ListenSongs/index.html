@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musica em Website | Heber Gustavo</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="img/logo.png" class="logo">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SOBRE</a></li>
+                <li><a href="#">ESPECIFICAÇÕES</a></li>
+                <li><a href="#">PRODUTOS</a></li>
+                <li><a href="#">LOGIN</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="left-col">
+                <h1>OUÇA<br>AGORA!</h1>
+            </div>
+            <div class="right-col">
+                <p>Clique Para Ouvir</p>
+                <img src="img/play.png" id="icon">
+            </div>
+        </div>
+
+        <audio id="mySong">
+            <source src="img/song.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <script>
+        var mySong = document.getElementById('mySong');
+        var icon = document.getElementById('icon');
+
+        icon.onclick = function() {
+            if(mySong.paused){
+                mySong.play();
+                icon.src = 'img/pause.png'
+            }
+            else {
+                mySong.pause();
+                icon.src = 'img/play.png'
+            }
+        }
+    </script>
+</body>
+</html>
