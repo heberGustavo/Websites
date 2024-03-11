@@ -1,0 +1,1207 @@
+/*Gerais*/
+/*Fonts*/
+@font-face {
+    font-family: Heavitas;
+    src: url(../fontes/heavitas/Heavitas.ttf);
+}
+
+@font-face {
+    font-family: KeepCalm;
+    src: url(../fontes/keep_calm/KeepCalm-Medium.ttf);
+}
+
+@font-face {
+    font-family: OrangeJuice2;
+    src: url(../fontes/orange_juice_2/Orange\ Juice.ttf);
+}
+
+/*
+ - Cores
+    - Verde claro : #00db71
+    - Verde escuro : #004f29
+    - Laranja : #ff943d
+*/
+
+.tracejado-mobile{
+    display: none;
+}
+
+.verde-claro{
+    color: #00db71;
+}
+
+.bg-verde-claro{
+    background-color: #00db71;
+}
+
+.verde-escuro{
+    color: #004f29;
+}
+
+.bg-verde-escuro{
+    background-color: #004f29;
+}
+
+.laranja{
+    color: #ff943d;
+}
+
+.bg-laranja{
+    background-color: #ff943d;
+}
+
+label,
+p, 
+span, 
+text
+{
+    font-family: Roboto;
+}
+
+button{
+    font-family: KeepCalm;
+}
+
+.h-100{
+    height: 100%;
+}
+
+.p-10{
+    padding: 10px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.fs-14{
+    font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.negrito-500 {
+    font-weight: 500;
+}
+
+.negrito-700 {
+    font-weight: 700;
+}
+
+.negrito-900 {
+    font-weight: 900;
+}
+
+.btn-green{
+    background-color: green;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/*Navbar*/
+header{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+}
+
+header nav{
+    height: 150px;
+}
+
+header nav img{
+    width: 400px;
+}
+
+header nav button i{
+    color: #00e011;
+}
+
+.navbar-dark .navbar-toggler{
+    color: green;
+    border-color: green;
+}
+
+header nav .botoes-principais {
+    width: 115px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #004f29;
+    border-radius: 50px;
+    margin: 0 15px;
+}
+
+.botoes-principais a {
+    color: #ffffff !important;
+    font-family: KeepCalm;
+}
+
+#navbarCollapse{
+    padding-left: 38%;
+}
+
+/* Active */
+.active-nav {
+    height: 115px !important;
+    background-color: #eaebeb !important;
+    -webkit-transition: all 1.0s ease-in-out;
+    -moz-transition: all 1.0s ease-in-out;
+    -o-transition: all 1.0s ease-in-out;
+    -ms-transition: all 1.0s ease-in-out;
+    transition: all 1.0s ease-in-out;
+}
+
+.desative-nav {
+    -webkit-transition: all 1.0s ease-in-out;
+    -moz-transition: all 1.0s ease-in-out;
+    -o-transition: all 1.0s ease-in-out;
+    -ms-transition: all 1.0s ease-in-out;
+    transition: all 1.0s ease-in-out;
+}
+
+/*Marketing Nutricionista*/
+#marketing-nutricionista{
+    height: 450px;
+    margin-top: 60px;
+    background-size: 40%;
+    margin-bottom: 10%;
+}
+
+#marketing-nutricionista h1{
+    font-size: 3.3rem;
+}
+
+#marketing-nutricionista p{
+    font-size: 30px;
+}
+
+#marketing-nutricionista button{
+    width: 40%;
+    height: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#esperimentar-agora1:hover{
+    background: white;
+    border: 1px solid orange;
+    color: orange !important;    
+}
+
+#esperimentar-agora1{
+    height: 50px;
+}
+
+#marketing-nutricionista ul{
+    list-style: none;
+    margin-top: -70%;
+    padding-right: 10%;
+}
+
+#marketing-nutricionista img {
+    margin-top: 15%;
+}
+
+#marketing-nutricionista .margem-coluna-botoes{
+    padding-right: 10%;
+}
+
+#img-superior-principal{
+    width: 550px;   
+}
+
+#marketing-nutricionista li{
+    padding: 5px 0;
+}
+
+#marketing-nutricionista ul button{
+    border-radius: 15px 15px 30px 30px;
+}
+
+#lista-btn-principal-1 button{
+    width: 70%; 
+}
+
+#lista-btn-principal-2 button{
+    width: 60%;
+}
+
+#lista-btn-principal-3 button{
+    width: 50%;
+}
+
+#marketing-nutricionista .coluna-botoes{
+    margin-left: -10%;
+}
+
+/*Elemine Tarefas*/
+#elemine-tarefas .titulo{
+    font-family: Heavitas;
+    font-size: 60px;
+}
+
+#elemine-tarefas .sessao-elemine-tarefas{
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+#img-posts{
+    padding: 0 60px;
+    margin-bottom: 10%;
+}
+
+#img-posts .img-principal{
+    width: 110%;
+}
+
+#img-posts .conteudo{
+    display: flex;
+    text-align: center;
+    align-self: center;
+}
+
+#img-posts .conteudo h3{
+    font-size: 38px;
+}
+
+/*Tres Conteudos na Sessao - 1*/
+.tres-conteudos-horizontal{
+    margin-bottom: 10%;
+}
+
+.tres-conteudos-horizontal .titulo{
+    font-family: Heavitas;
+    color: #004f29;
+    font-size: 30px;
+    align-self: center;
+}
+
+.tres-conteudos-horizontal img{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tres-conteudos-horizontal .centralizar{
+    align-self: center;
+}
+
+.tres-conteudos-horizontal .img-pronta{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tres-conteudos-horizontal p{
+    font-size: 25px;
+    font-family: KeepCalm;
+    color: #004f29;
+}
+
+/*sessao 2*/
+.tres-conteudos-horizontal .titulo-funcionamento{
+    font-size: 19px;
+    font-family: KeepCalm;
+    color: #004f29;
+}
+.tres-conteudos-horizontal .descricao-funcionamento{
+    font-size: 35px;
+    font-family: KeepCalm;
+    color: #00db71;
+    margin-bottom: 20px;
+}
+
+.tres-conteudos-horizontal .titulo-sessao2{
+    font-family: OrangeJuice2;
+    color: #00db71;
+    font-size: 40px;
+    align-self: center;
+}
+
+.tres-conteudos-horizontal .img-sessao2{
+    width: 75%;
+}
+
+.tres-conteudos-horizontal .descricao-sessao2{
+    font-size: 19px;
+    font-family: KeepCalm;
+    color: #004f29;
+}
+
+.tres-conteudos-horizontal .conteudo{
+    margin-top: -60px;
+}
+
+.tres-conteudos-horizontal .card-body{
+    padding: 0;
+}
+
+.tres-conteudos-horizontal .alinhamento-titulo{
+    height: 85px;
+    display: flex;
+    justify-content: center;
+}
+
+/*Carrossel*/
+#redes-atualizadas{
+    text-align: center;
+}
+
+#redes-atualizadas .titulo{
+    font-family: Heavitas;
+    font-size: 50px;
+    margin-bottom: 5%;
+    color: #004f29;
+}
+
+/*Carrossel*/
+
+.carousel{
+    margin-bottom: 5%;
+}
+
+.carousel .btn-superior{
+    width: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 70px;
+}
+
+.img-carrossel{
+    width: 95% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.slick-list {
+    margin: 0 20% !important;
+}
+
+.slick-prev{
+    margin-left: 20%;
+    margin-top: 30px;
+}
+
+.slick-prev:before{
+    color: black;
+}
+
+.slick-next{
+    margin-right: 20%;
+    margin-top: 30px;
+}
+
+.slick-next:before{
+    color: black;
+}
+
+#botao-esperimentar2{
+    margin-bottom: 10%;
+}
+
+#botao-esperimentar2 button{
+    width: 400px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+#botao-esperimentar2 button:hover{
+    background: white;
+    border: 1px solid orange;
+    color: orange !important;
+}
+
+.botoes-redondos{
+    width: 50px;
+    height: 50px;
+    font-family: KeepCalm;
+    font-size: 30px;
+    background: #00db71;
+    color: #ffffff;
+    cursor: default !important;
+    margin-bottom: -40px;
+    z-index: 999;
+}
+
+.botoes-redondos:hover{
+    color: #ffffff;
+}
+
+/*Integrações*/
+#integracoes{
+    padding: 0 60px;
+    margin-bottom: 10%;
+}
+
+#integracoes .img-principal{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#integracoes .conteudo{
+    text-align: center;
+    align-self: center;
+}
+
+#integracoes .conteudo h3{
+    font-size: 38px;
+    font-weight: 700;
+    color: #004f29;
+}
+
+#integracoes .conteudo p{
+    font-size: 35px;
+    margin-bottom: 0;
+    color: #004f29;
+}
+
+/*Planos*/
+#planos{
+    margin-bottom: 10%;
+}
+
+#planos .titulo-sessao{
+    font-family: OrangeJuice2;
+    font-size: 100px;
+    color: #00db71;
+    margin-bottom: 3%;
+}
+
+#planos .row-card{
+    justify-content: center;
+}
+
+#planos .card-body h5{
+    font-size: 3.75rem;
+    display: contents;
+    color: #00db71;
+}
+
+#planos .card-body .mes{
+    color: #00db71;
+}
+
+#planos .card-body .sifra{
+    font-size: 20px;
+}
+
+#planos .card-1{
+    border-radius: 20px;
+    width: 22rem;
+    height: 37rem;
+}
+
+#planos .centralizar-button-plano{
+    width: 22rem;
+}
+
+.margin-card{
+    margin-right: -43px;
+}
+
+#planos .card-1 .card-body {
+    margin-top: 22px;
+}
+
+#planos .card-2{
+    width: 22rem;
+    height: 37rem;
+    border-radius: 20px;
+    box-shadow: 4px 5px 26px rgba(0, 0, 0, 0.26);
+}
+
+.topicos{
+    font-size: 23px;
+    color: #00db71;
+}
+
+.mais-popular{
+    transform: rotate(36deg);
+    margin-left: 199px;
+    width: 161px;
+    margin-top: -2px;
+    background-color: orange;
+    border-radius: 4px;
+    color: white;
+}
+
+.tracejado{
+    color: #00db71;
+    font-size: 20px;
+}
+
+#planos h6{
+    font-size: 30px;
+    color: #00db71;
+}
+
+#planos button{
+    width: 280px;
+    height: 50px;
+}
+
+#planos button:hover{
+    background: white;
+    border: 1px solid orange;
+    color: orange !important;
+}
+
+/*Perguntas frequentes*/
+#perguntas-frequentes{
+    margin-bottom: 5%;
+}
+
+#perguntas-frequentes .titulo-sessao{
+    font-family: Heavitas;
+    text-align: center;
+    font-size: 50px;
+    color: #00db71;
+    margin-bottom: 3%;
+}
+
+#perguntas-frequentes .card-header{
+    background-color: transparent;
+    border: none;
+}
+
+#perguntas-frequentes .card-header:hover{
+    background-color: #c1c1c129;
+}
+
+#perguntas-frequentes .card-header button{
+    font-size: 25px;
+    display: flex;
+    padding-bottom: 0;
+    margin: 0;
+    padding-top: 0;
+}
+
+#perguntas-frequentes .card-header button i{    
+    font-size: 17px;
+    align-self: center;
+    margin-right: 10px;
+}
+
+#perguntas-frequentes .card-body{
+    font-size: 18px;
+    padding-top: 0;
+    padding-left: 60px;
+}
+
+/*Rodape*/
+#rodape{
+    background:  linear-gradient(#a8a8a8, #2a2a2a);;
+    padding: 40px 0;
+}
+
+#rodape .titulo{
+    font-family: Heavitas;
+    color: white;
+    font-size: 1.55rem;
+}
+
+#rodape li{
+    list-style: none;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#rodape li:hover{
+    font-weight: 700;
+    border-radius: 10px;   
+}
+
+#footer{
+    color: #ffffff;
+    background: #2a2a2a;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/*Efeito pulsar*/
+@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(1); }
+    50% { -webkit-transform: scale(1.1); }
+    100% { -webkit-transform: scale(1); }
+}
+.pulso {
+    width:auto;
+    margin-left:3px;
+}
+.pulso:hover {
+    -webkit-animation: pulse 1s infinite;
+    -moz-animation: pulse 1s;
+    -ms-animation: pulse 1s;
+    
+} 
+  
+/*Media Query*/
+@media (max-width: 575px) { 
+    header nav .navbar-brand{
+        width: 80%;
+    }
+    .img-fluid{
+        max-width: 88%;
+    }
+
+    #marketing-nutricionista{
+        height: 300px;
+        margin-bottom: 0;
+    }
+
+    #marketing-nutricionista h1{
+        font-size: 2.4rem;
+    }
+
+    #marketing-nutricionista p{
+        font-size: 18px;
+    }
+
+    #marketing-nutricionista button{
+        width: 85%;
+        height: 40px;
+        justify-content: center;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .coluna-botoes{
+        display: none;
+    }
+
+    #elemine-tarefas .titulo{
+        font-size: 27px;
+    }
+
+    #img-posts .conteudo h3{
+        font-size: 26px;
+    }
+
+    .tres-conteudos-horizontal img{
+        width: 60%;
+    }
+
+    .tres-conteudos-horizontal .card{
+        padding: 40px 0;
+    }
+
+    .tres-conteudos-horizontal .titulo{
+        font-size: 24px;
+    }
+
+    .tres-conteudos-horizontal p{
+        font-size: 17px;
+        margin-top: -15px;
+    }
+
+    #redes-atualizadas .titulo{
+        font-size: 26px;
+    }
+
+    .btn-superior{
+        display: none;
+    }
+
+    #botao-esperimentar2 button{
+        width: 70%;
+        height: 10%;
+    }
+
+    .tres-conteudos-horizontal .titulo-funcionamento{
+        font-size: 15px;
+        padding-top: 15%;
+    }
+
+    .tres-conteudos-horizontal .descricao-funcionamento{
+        font-size: 24px;
+    }
+
+    .botoes-redondos{
+        width: 40px;
+        height: 40px;
+        font-size: 19px;
+    }
+
+    .tres-conteudos-horizontal .descricao-sessao2{
+        margin-top: 10px;
+    }
+
+    #integracoes .conteudo p{
+        font-size: 16px;
+    }
+
+    #integracoes .conteudo h3{
+        font-size: 28px;
+    }
+
+    .tres-conteudos-horizontal .img-pronta{
+        width: 70%;
+    }
+
+    .centralizar{
+        padding: 30px 0;
+    }
+
+    #planos .titulo-sessao{
+        font-size: 70px;
+    }
+
+    #planos .card-1{
+        border-radius: 20px;
+        width: 18rem;
+        height: 31rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #planos .card-2{
+        border-radius: 20px;
+        width: 18rem;
+        height: 38rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tracejado{
+        display: none;
+    }
+
+    .tracejado-mobile{
+        color: #00db71;
+        font-size: 20px;
+        display: block;
+    }
+
+    #planos .card-body h5{
+        font-size: 2.80rem;
+    }
+
+    #planos h6{
+        font-size: 28px;
+    }
+
+    .topicos{
+        font-size: 20px;
+    }
+
+    #planos button{
+        width: 230px;
+        height: 10%;
+    }
+
+    #planos .centralizar-button-plano{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+    }
+
+    .mais-popular{
+        margin-left: 175px;
+        width: 137px;
+        margin-top: -10px;
+    }
+
+    #perguntas-frequentes .titulo-sessao{
+        font-size: 28px;
+    }
+
+    #perguntas-frequentes .card-header button{
+        text-align: start;
+        font-size: 17px;
+    }
+
+    #perguntas-frequentes .card-body{
+        font-size: 16px;
+    }
+
+    #rodape li{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) { 
+    
+    header nav .botoes-principais{
+        width: 100%;
+        border-radius: 0;
+        border: 1px solid white;
+        background: #004f29;
+    }
+    
+    .img-fluid {
+        max-width: 75%;
+        margin-left: 11px;
+    }
+
+    #marketing-nutricionista{
+        padding: 0 20px;
+        height: 370px;
+        margin-bottom: 0;
+    }
+
+    #marketing-nutricionista h1{
+        font-size: 2.9rem;
+    }
+
+    #marketing-nutricionista p{
+        font-size: 22px;
+    }
+
+    #marketing-nutricionista ul{
+        margin-top: -84%;
+        margin-right: -29px;
+        margin-left: -25px;
+    }
+
+    #marketing-nutricionista li {
+        padding: 2px 0;
+    }
+
+    #esperimentar-agora1{
+        width: 50% !important;
+    }
+
+    header nav .botoes-principais{
+        font-size: 16px;
+    }
+
+    #marketing-nutricionista .coluna-botoes{
+        display: none;
+    }
+
+    #elemine-tarefas .titulo{
+        font-size: 31px;
+    }
+
+    #img-posts .img-principal{
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    #img-posts .conteudo h3{
+        font-size: 27px;
+    }
+
+    .tres-conteudos-horizontal img{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tres-conteudos-horizontal .conteudo{
+        margin-top: -80px;
+    }
+
+    .tres-conteudos-horizontal .titulo{
+        font-size: 25px;
+    }
+
+    .tres-conteudos-horizontal p{
+        font-size: 18px;
+        margin-top: -25px;
+    }
+
+    .tres-conteudos-horizontal .card{
+        padding: 30px 0;
+    }
+
+    #redes-atualizadas .titulo{
+        font-size: 31px;
+    }
+
+    .carousel .btn-superior{
+        display: none;
+    }
+
+    #botao-esperimentar2 button{
+        width: 250px;
+        height: 39px;
+        border-radius: 17px;
+    }
+
+    .tres-conteudos-horizontal .titulo-funcionamento{
+        font-size: 17px;
+        padding-top: 40px;
+    }
+
+    .tres-conteudos-horizontal .descricao-funcionamento{
+        font-size: 27px
+    }
+
+    .botoes-redondos{
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+        margin-left: 120px;
+    }
+
+    .tres-conteudos-horizontal .img-sessao2{
+        width: 50%;
+    }
+
+    #integracoes .conteudo h3{
+        font-size: 31px;
+    }
+
+    #integracoes .conteudo p{
+        font-size: 25px;
+    }
+
+    #integracoes .img-principal{
+        width: 70%;
+        margin-top: 7%;
+    }
+
+    .tres-conteudos-horizontal .img-pronta{
+        width: 60%;
+    }
+
+    .centralizar{
+        padding: 25px 0;
+    }
+
+    #planos .card{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #planos .centralizar-button-plano{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+    }
+
+    #planos .titulo-sessao{
+        font-size: 90px;
+    }
+
+    #perguntas-frequentes .titulo-sessao{
+        font-size: 31px;
+    }
+
+    #perguntas-frequentes .card-header button{
+        text-align: start;
+        font-size: 16px;
+    }
+
+    #perguntas-frequentes .card-body{
+        font-size: 16px;
+    }
+
+    .col-getpostagem{
+        padding: 30px 0;
+        padding-left: 2%;
+    }
+
+    .col-atendimento{
+        padding: 30px 0;
+        padding-left: 10%;
+    }
+ }
+
+@media (min-width: 768px) and (max-width: 991px) {     
+
+    header nav img{
+        margin-left: -3%;
+        width: 370px;
+    }
+    
+    #navbarCollapse {
+        padding-left: 6%;
+        margin-right: -59px;
+    }
+
+    #marketing-nutricionista h1{
+        font-size: 2.9rem;
+    }
+
+    #marketing-nutricionista p{
+        font-size: 22px;
+    }
+
+    #esperimentar-agora1 button{
+        width: 270px;
+    }
+
+    #marketing-nutricionista ul{
+        margin-top: -83%;
+        margin-right: -25px;
+        margin-left: -11px;
+    }
+
+    #esperimentar-agora1{
+        width: 250px !important;
+    }
+
+    #img-superior-principal {
+        width: 387px !important;
+    }
+    
+    #marketing-nutricionista button{
+        height: 39px;
+    }
+
+    #esperimentar-agora1{
+        height: 50px !important;
+    }
+
+    #elemine-tarefas .titulo{
+        font-size: 35px;
+    }
+
+    #img-posts .conteudo h3{
+        font-size: 26px;
+    }
+
+    .tres-conteudos-horizontal img{
+        width: 50%;
+    }
+
+    .tres-conteudos-horizontal .card{
+        margin: 20px 0;
+    }
+
+    .tres-conteudos-horizontal p{
+        margin-top: -15px;
+    }
+
+    #redes-atualizadas .titulo{
+        font-size: 33px;
+    }
+
+    .carousel .btn-superior{
+        display: none;
+    }
+
+    #botao-esperimentar2 button{
+        width: 350px;
+        height: 50px;
+        border-radius: 17px;
+    }
+
+    .tres-conteudos-horizontal .descricao-funcionamento{
+        font-size: 27px;
+    }
+
+    .tres-conteudos-horizontal .titulo-funcionamento{
+        font-size: 17px;
+    }
+
+    .tres-conteudos-horizontal .img-sessao2{
+        width: 50%;
+    }
+    
+    .botoes-redondos{
+        margin-left: 22%;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    #integracoes .conteudo p{
+        font-size: 23px;
+    }
+
+    #integracoes .conteudo h3{
+        font-size: 33px;
+    }
+
+    .tres-conteudos-horizontal .centralizar{
+        padding: 16px 0;
+    }
+
+    .tres-conteudos-horizontal .img-pronta{
+        width: 50%;
+    }
+
+    .margin-card{
+        margin-right: 70px;
+        margin-left: 3%;
+    }
+
+    #planos .row-card{
+        justify-content: start;
+    }
+
+    #perguntas-frequentes .titulo-sessao{
+        font-size: 40px;
+    }
+
+    #perguntas-frequentes .card-header button{
+        font-size: 18px;
+    }
+
+    #perguntas-frequentes .card-body{
+        font-size: 16px;
+    }
+
+    #rodape .titulo{
+        font-size: 1.15rem;
+    }
+
+    #rodape li{
+        margin-left: -30px;
+        font-size: 17px;
+    }
+
+    #rodape .pagamento img{
+        width: 200px;
+    }
+
+    #rodape .redes-sociais img{
+        width: 30px;
+    }
+ }
+
+@media (min-width: 992px) and (max-width: 1199px) { 
+
+    header nav img{
+        margin-left: -30%;
+    }
+
+    #navbarCollapse {
+        padding-left: 25%;
+    }
+
+    #marketing-nutricionista ul{
+        margin-top: -85%;
+        padding-right: 0%;
+    }
+
+    .margin-card{
+        margin-right: 5px;
+    }
+
+    #elemine-tarefas .titulo{
+        font-size: 50px;
+    }
+
+    #redes-atualizadas .titulo{
+        font-size: 45px;   
+    }
+
+    .navbar-dark .navbar-brand{
+        margin-left: 85px;
+    }
+ }
+
+@media (min-width: 1200px) { 
+
+ }
