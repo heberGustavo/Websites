@@ -1,0 +1,390 @@
+@font-face{
+    font-family: cartoon;
+    src: url(fonts/cartoon_slam-webfont.woff);
+}
+
+@font-face{
+    font-family: whitney;
+    src: url(fonts/Whitney-Book.woff);
+}
+
+body{
+    background: #ffffff;
+    font-family: cartoon;
+    font-size: 12px;
+}
+
+#cabecalho{
+    width: 100%;
+    height: 110px;
+    background: #000;
+    color: #ffffff;
+}
+
+#superior{
+    width: 820px;
+    height: 80  px;
+    margin: 0 auto;
+    clear: both;
+}
+
+#programacao-atual{
+    width: 400px;
+    float: left;
+}
+
+#programacao-atual h2{
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#programacao-atual p{
+    text-align: right;
+    margin-right: 10px;
+}
+
+#anuncio{
+    width: 400px;
+    float: left;
+}
+
+#anuncio img{
+    width: 100px;
+    height: 65px;
+    margin-top: 10px;
+}
+
+#barra-procurar{
+    width: 100%;
+    height: 40px;
+    background: #4c4c4c;
+    float: right;    
+}
+
+#barra-procurar img{
+    width: 120px;
+    height: 120px;
+    margin-top: -35px;
+    margin-left: 240px;
+}
+
+#barra-procurar input{
+    width: 200px;
+    height: 27px;
+    color: #ffffff;
+    background: #000000;
+    font-family: whitney;
+    border: none;
+    float: right;
+    margin-top: 13px;
+    margin-right: 275px;
+}
+
+#conteudo{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#conteudo .barra-amarela{
+    width: 100%;
+    height: 5px;
+    background: #ffea00;
+}
+
+#conteudo #data{
+    border: 1px solid #009ade;
+    background: #009ade;
+}
+
+#conteudo #data p{
+    font-size: 23px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+#conteudo #horas-programacao{
+    float: left;   
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+/* Grid */
+.grid {
+	display: grid;
+}
+
+.grid-template-columns-1 {
+    grid-template-columns: 75px 75px 75px 75px 75px;
+}
+
+.item {
+    width: 75px;
+    height: 75px;
+	border: 1px solid #ffffff;
+	text-align: center;
+    font-size: 1.5em;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 80px;
+}
+
+.seta-item{
+    background: url(imagens/seta-direita-cinza.png) center no-repeat;
+    background-size: 50px;
+}
+
+.seta-item:hover{
+    background: url(imagens/seta-direita-preta.png) center no-repeat;
+    background-size: 50px;
+}
+
+/*Conteudo Lateral*/
+#conteudo #programacao-lateral{
+    width: 250px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+    border-bottom: 2px solid #ffea00;
+    border-right: 2px solid #ffea00;
+    border-left: 2px solid #ffea00;
+}
+
+#horario #hora-programacao{
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+    background: #ffea00;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.programacao{
+    height: 73px;
+    text-align: center;
+    padding: 2px;
+    border: 3px solid #ffea00;
+}
+
+.programacao:hover{
+    background: #fff8aa;
+}
+
+.programacao a{
+    width: 100%;
+    color: #000000;
+}
+
+.h3-lateral{
+    transform: translateX(-5%) rotate(-90deg);
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 22px;
+    margin-left: -15px;
+    float: left;
+}
+
+.programacao img{
+    height: 100%;
+    float: left;
+    margin-left: -15px;
+}
+
+.paragrafo-lateral{
+    font-family: whitney;
+    font-size: 15px;
+    float: right;
+    margin-top: 25px;
+}
+
+#rolagem-de-desenhos{
+    margin-top: 410px;
+    height: 80px;
+    background: #ec0080;
+    clear: both;
+    text-align: center;
+}
+
+#rolagem-de-desenhos img{
+    margin-top: -23px;
+    margin-left: 15px;
+}
+
+#rolagem-de-desenhos img:hover
+{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.seta-desenhos{
+    width: 50px;
+}
+
+.barra-azul{
+    height: 5px;
+}
+
+#rodape{
+    width: 100%;
+    height: 135px;
+    background: #4c4c4c;
+}
+
+#rodape #comentario-inferior{
+    width: 820px;
+    margin: 0 auto;
+}
+
+#rodape #comentario-inferior img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: -20px;
+}
+
+#rodape #comentario-inferior p{
+    width: 710px;
+    float: left;  
+    text-align: center;
+    padding: 5px;
+    margin-top: 25px;
+    margin-left: 10px;
+    font-size: 10px;  
+    color: #ffffff;
+    font-family: whitney;
+    font-size: 13px;
+}
+
+#fundo-menu{
+    clear: both;
+    width: 100%;
+    height: 45px;
+    background: #000000;
+}
+
+#menu-inferior{
+    clear: both;
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#menu-inferior span{
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+
+
+/*Configurações Gerais*/
+/*Background*/
+.azul{
+    background: #009ade;
+}
+
+.rosa{
+    background: #ec0080;
+}
+
+.amarelo{
+    background: #ffea00;
+}
+
+.preto{
+   background: #000000; 
+}
+
+.branco{
+    background: #ffffff; 
+}
+
+.flex{
+    display: flex;
+}
+
+/*Modal Lateral*/
+.barr-amarela{
+    margin-left: -16px;
+    width: 498px;
+    height: 3px;
+}
+
+.negrito{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.modal-lateral{
+    width: 500px;
+    background: #ec0080;
+    color: #ffffff;
+    margin-left: 100px;
+}
+
+.modal-header{
+    background: #ffea00;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.modal-header h4{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.modal-header small{
+    font-family: whitney;
+    font-size: 16px;
+}
+
+/*Body*/
+.modal-body{
+    font-family: whitney;
+}
+
+.modal-body h4{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.modal-body p{
+    font-size: 17px;
+}
+
+/*Modal Rolagem*/
+.modal-rolagem{
+    background: #009ade;
+    color: #ffffff;
+}
+
+@media (min-width: 576px){
+    .modal-dialog  {
+        max-width: 700px;
+    }
+}
+
+.col-sm{
+    height: 80px;
+    background: #ffffff;
+    color: #ec0080;
+    margin: 2px;
+}
+
+.col-sm span{
+    font-size: 16px;
+}
+
+.horario-rolagem{
+    color: #ffea00;
+}
+
+.centralizar-colunas-rolagem{
+    text-align: center;
+}
